@@ -1,0 +1,26 @@
+json_schema {
+    "type": "object",
+    "properties": {
+        "Convolutional2DLayer": {
+            "type": "object",
+            "properties": {
+                "num_feature_maps": {"type": "number"},
+                "feature_map_size": {"type": "number"},
+                "filter_size": {"type": "number"},
+                "filter_spacing": {"type": "number"},
+            },
+        },
+        "FeedForwardLayer": {
+            "type": "object",
+            "properties": {
+                "num_nodes": {"type": "number"},
+            },
+        },
+        "MaxPooling2DLayer": {
+            "type": "object",
+            "properties": {
+                "kernel_size": {"type": "number"},
+            },
+        },
+    },
+}
