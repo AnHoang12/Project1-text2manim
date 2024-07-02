@@ -1,0 +1,349 @@
+[
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([FeedForwardLayer(num_nodes=3, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=5), FeedForwardLayer(num_nodes=7), FeedForwardLayer(num_nodes=7, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=1),], layer_spacing = 0.36)",
+        "functions_list": [
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_nodes": 3,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 5
+            },
+            {
+                "num_nodes": 7
+            },
+            {
+                "num_nodes": 7,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 1
+            }
+        ]
+    },
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=2, feature_map_size=6, filter_size=5, filter_spacing=0.31), Convolutional2DLayer(num_feature_maps=1, feature_map_size=5, filter_size=5, filter_spacing=0.4, activation_function=\"ReLU\"), Convolutional2DLayer(num_feature_maps=1, feature_map_size=3, filter_size=5, filter_spacing=0.21, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=5), MaxPooling2DLayer(kernel_size=2),], layer_spacing = 0.3)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 2,
+                "feature_map_size": 6,
+                "filter_size": 5,
+                "filter_spacing": 0.31
+            },
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 5,
+                "filter_size": 5,
+                "filter_spacing": 0.4,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 3,
+                "filter_size": 5,
+                "filter_spacing": 0.21,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 5
+            },
+            {
+                "kernel_size": 2
+            }
+        ]
+    },
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=4, feature_map_size=6, filter_size=5, filter_spacing=0.36), FeedForwardLayer(num_nodes=5, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=3, activation_function=\"Sigmoid\"), FeedForwardLayer(num_nodes=3, activation_function=\"ReLU\"), MaxPooling2DLayer(kernel_size=1),], layer_spacing = 0.39)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 4,
+                "feature_map_size": 6,
+                "filter_size": 5,
+                "filter_spacing": 0.36
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 3,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_nodes": 3,
+                "activation_function": "ReLU"
+            },
+            {
+                "kernel_size": 1
+            }
+        ]
+    },
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=4, feature_map_size=4, filter_size=5, filter_spacing=0.44, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=5, activation_function=\"Sigmoid\"), FeedForwardLayer(num_nodes=5, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=1), MaxPooling2DLayer(kernel_size=2),], layer_spacing = 0.36)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 4,
+                "feature_map_size": 4,
+                "filter_size": 5,
+                "filter_spacing": 0.44,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 1
+            },
+            {
+                "kernel_size": 2
+            }
+        ]
+    },
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=5, feature_map_size=7, filter_size=7, filter_spacing=0.48), FeedForwardLayer(num_nodes=7, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=3), MaxPooling2DLayer(kernel_size=3), MaxPooling2DLayer(kernel_size=4),], layer_spacing = 0.34)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 5,
+                "feature_map_size": 7,
+                "filter_size": 7,
+                "filter_spacing": 0.48
+            },
+            {
+                "num_nodes": 7,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 3
+            },
+            {
+                "kernel_size": 3
+            },
+            {
+                "kernel_size": 4
+            }
+        ]
+    },
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=5, feature_map_size=7, filter_size=5, filter_spacing=0.13, activation_function=\"Sigmoid\"), Convolutional2DLayer(num_feature_maps=1, feature_map_size=4, filter_size=7, filter_spacing=0.19, activation_function=\"Sigmoid\"), Convolutional2DLayer(num_feature_maps=3, feature_map_size=3, filter_size=5, filter_spacing=0.24, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=5, activation_function=\"ReLU\"), MaxPooling2DLayer(kernel_size=5),], layer_spacing = 0.46)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 5,
+                "feature_map_size": 7,
+                "filter_size": 5,
+                "filter_spacing": 0.13,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 4,
+                "filter_size": 7,
+                "filter_spacing": 0.19,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_feature_maps": 3,
+                "feature_map_size": 3,
+                "filter_size": 5,
+                "filter_spacing": 0.24,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "ReLU"
+            },
+            {
+                "kernel_size": 5
+            }
+        ]
+    },
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=5, feature_map_size=6, filter_size=3, filter_spacing=0.47, activation_function=\"Sigmoid\"), Convolutional2DLayer(num_feature_maps=4, feature_map_size=6, filter_size=5, filter_spacing=0.26, activation_function=\"Sigmoid\"), Convolutional2DLayer(num_feature_maps=5, feature_map_size=4, filter_size=3, filter_spacing=0.14), FeedForwardLayer(num_nodes=5, activation_function=\"Sigmoid\"), FeedForwardLayer(num_nodes=3, activation_function=\"ReLU\"),], layer_spacing = 0.24)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 5,
+                "feature_map_size": 6,
+                "filter_size": 3,
+                "filter_spacing": 0.47,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_feature_maps": 4,
+                "feature_map_size": 6,
+                "filter_size": 5,
+                "filter_spacing": 0.26,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_feature_maps": 5,
+                "feature_map_size": 4,
+                "filter_size": 3,
+                "filter_spacing": 0.14
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_nodes": 3,
+                "activation_function": "ReLU"
+            }
+        ]
+    },
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=1, feature_map_size=3, filter_size=7, filter_spacing=0.22, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=5, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=2), MaxPooling2DLayer(kernel_size=5), MaxPooling2DLayer(kernel_size=2),], layer_spacing = 0.15)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 3,
+                "filter_size": 7,
+                "filter_spacing": 0.22,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 2
+            },
+            {
+                "kernel_size": 5
+            },
+            {
+                "kernel_size": 2
+            }
+        ]
+    },
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([FeedForwardLayer(num_nodes=3, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=1), MaxPooling2DLayer(kernel_size=3), MaxPooling2DLayer(kernel_size=2), MaxPooling2DLayer(kernel_size=5),], layer_spacing = 0.16)",
+        "functions_list": [
+            "FeedForwardLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_nodes": 3,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 1
+            },
+            {
+                "kernel_size": 3
+            },
+            {
+                "kernel_size": 2
+            },
+            {
+                "kernel_size": 5
+            }
+        ]
+    },
+    {
+        "text": "",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=1, feature_map_size=5, filter_size=3, filter_spacing=0.24, activation_function=\"Sigmoid\"), FeedForwardLayer(num_nodes=7), FeedForwardLayer(num_nodes=7, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=7, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=5),], layer_spacing = 0.19)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 5,
+                "filter_size": 3,
+                "filter_spacing": 0.24,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_nodes": 7
+            },
+            {
+                "num_nodes": 7,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 7,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 5
+            }
+        ]
+    }
+]

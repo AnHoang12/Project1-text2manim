@@ -1,0 +1,349 @@
+[
+    {
+        "text": "The neural network consists of a series of layers, starting with a Convolutional2DLayer with 5 feature maps, each with a size of 6 and a filter size of 3, with a filter spacing of 0.47, and using the Sigmoid activation function. This is followed by another Convolutional2DLayer with 4 feature maps, each with a size of 6 and a filter size of 5, with a filter spacing of 0.26, also using the Sigmoid activation function. The next layer is a Convolutional2DLayer with 5 feature maps, each with a size of 4 and a filter size of 3, with a filter spacing of 0.14. The network then includes a FeedForwardLayer with 5 nodes and a Sigmoid activation function, and another FeedForwardLayer with 3 nodes and a ReLU activation function. The spacing between layers is set to 0.24.",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=5, feature_map_size=6, filter_size=3, filter_spacing=0.47, activation_function=\"Sigmoid\"), Convolutional2DLayer(num_feature_maps=4, feature_map_size=6, filter_size=5, filter_spacing=0.26, activation_function=\"Sigmoid\"), Convolutional2DLayer(num_feature_maps=5, feature_map_size=4, filter_size=3, filter_spacing=0.14), FeedForwardLayer(num_nodes=5, activation_function=\"Sigmoid\"), FeedForwardLayer(num_nodes=3, activation_function=\"ReLU\"),], layer_spacing = 0.24)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 5,
+                "feature_map_size": 6,
+                "filter_size": 3,
+                "filter_spacing": 0.47,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_feature_maps": 4,
+                "feature_map_size": 6,
+                "filter_size": 5,
+                "filter_spacing": 0.26,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_feature_maps": 5,
+                "feature_map_size": 4,
+                "filter_size": 3,
+                "filter_spacing": 0.14
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_nodes": 3,
+                "activation_function": "ReLU"
+            }
+        ]
+    },
+    {
+        "text": "sorry, \u60a8\u7684ip\u5df2\u7531\u4e8e\u89e6\u53d1\u9632\u6ee5\u7528\u68c0\u6d4b\u800c\u88ab\u5c01\u7981,\u672c\u670d\u52a1\u7f51\u5740\u662fhttps://chat18.aichatos8.com \u6216\u8005 https://cat.chatavx.com/ \u5982\u679c\u4f60\u4e0d\u5728\u672c\u7f51\u7ad9\uff0c\u8bf7\u524d\u5f80\u672c\u7f51\u7ad9\u4f7f\u7528\u5373\u53ef \u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1kelemm220 \u6216\u8005\u524d\u5f80 https://binjie09.shop \u81ea\u52a9\u8d2d\u4e70key, \u8ba4\u4e3a\u662f\u8bef\u5c01\u9700\u8981\u89e3\u5c01\u7684\u8bf7\u524d\u5f80https://www.ip.cn/ \u67e5\u8be2ip\u4fe1\u606f,\u5e76\u53d1\u9001\u4fe1\u606f\u81f3\u90ae\u4ef6 gpt33@binjie.site \uff0c\u7ad9\u957f\u4f1a\u5b9a\u671f\u770b\u90ae\u4ef6\u5e76\u5904\u7406\u89e3\u5c01\u548c\u5408\u4f5c\u95ee\u9898\uff0c\u5982\u9700\u8c03\u7528\u63a5\u53e3\u8bf7\u89c1\u63a5\u53e3\u6587\u6863https://apifox.com/apidoc/shared-803d9df6-a071-4b3e-9d69-ea1281614d82\uff0c\u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1chatkf123 \u6216\u8005\u524d\u5f80 https://cat.chatavx.com/  \u6ce8\u518c\u4f7f\u7528\uff08\u53ef\u4ed8\u8d39\u4f7f\u7528gpt4 \u6ce8\u518c\u53ef\u514d\u8d39\u4f7f\u75283.5\uff09",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=5, feature_map_size=7, filter_size=5, filter_spacing=0.13, activation_function=\"Sigmoid\"), Convolutional2DLayer(num_feature_maps=1, feature_map_size=4, filter_size=7, filter_spacing=0.19, activation_function=\"Sigmoid\"), Convolutional2DLayer(num_feature_maps=3, feature_map_size=3, filter_size=5, filter_spacing=0.24, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=5, activation_function=\"ReLU\"), MaxPooling2DLayer(kernel_size=5),], layer_spacing = 0.46)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 5,
+                "feature_map_size": 7,
+                "filter_size": 5,
+                "filter_spacing": 0.13,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 4,
+                "filter_size": 7,
+                "filter_spacing": 0.19,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_feature_maps": 3,
+                "feature_map_size": 3,
+                "filter_size": 5,
+                "filter_spacing": 0.24,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "ReLU"
+            },
+            {
+                "kernel_size": 5
+            }
+        ]
+    },
+    {
+        "text": "The given code snippet defines a neural network with a total of 4 feedforward layers. The first layer has 3 nodes and uses the Rectified Linear Unit (ReLU) activation function, while the second layer has 5 nodes. The third and fourth layers both have 7 nodes, with the fourth layer using the Sigmoid activation function. Additionally, there is a MaxPooling2D layer with a kernel size of 1. The layers are spaced 0.36 units apart from each other.",
+        "code": "nn=NeuralNetwork([FeedForwardLayer(num_nodes=3, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=5), FeedForwardLayer(num_nodes=7), FeedForwardLayer(num_nodes=7, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=1),], layer_spacing = 0.36)",
+        "functions_list": [
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_nodes": 3,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 5
+            },
+            {
+                "num_nodes": 7
+            },
+            {
+                "num_nodes": 7,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 1
+            }
+        ]
+    },
+    {
+        "text": "The given code snippet represents a neural network architecture with specific layers and parameters. It includes a Convolutional2DLayer with 4 feature maps, a feature map size of 6, a filter size of 5, and a filter spacing of 0.36. This is followed by a FeedForwardLayer with 5 nodes and ReLU activation function, another FeedForwardLayer with 3 nodes and Sigmoid activation function, and a third FeedForwardLayer with 3 nodes and ReLU activation function. The architecture also includes a MaxPooling2DLayer with a kernel size of 1. The spacing between the layers is set to 0.39.",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=4, feature_map_size=6, filter_size=5, filter_spacing=0.36), FeedForwardLayer(num_nodes=5, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=3, activation_function=\"Sigmoid\"), FeedForwardLayer(num_nodes=3, activation_function=\"ReLU\"), MaxPooling2DLayer(kernel_size=1),], layer_spacing = 0.39)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 4,
+                "feature_map_size": 6,
+                "filter_size": 5,
+                "filter_spacing": 0.36
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 3,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_nodes": 3,
+                "activation_function": "ReLU"
+            },
+            {
+                "kernel_size": 1
+            }
+        ]
+    },
+    {
+        "text": "sorry, \u60a8\u7684ip\u5df2\u7531\u4e8e\u89e6\u53d1\u9632\u6ee5\u7528\u68c0\u6d4b\u800c\u88ab\u5c01\u7981,\u672c\u670d\u52a1\u7f51\u5740\u662fhttps://chat18.aichatos8.com \u6216\u8005 https://cat.chatavx.com/ \u5982\u679c\u4f60\u4e0d\u5728\u672c\u7f51\u7ad9\uff0c\u8bf7\u524d\u5f80\u672c\u7f51\u7ad9\u4f7f\u7528\u5373\u53ef \u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1kelemm220 \u6216\u8005\u524d\u5f80 https://binjie09.shop \u81ea\u52a9\u8d2d\u4e70key, \u8ba4\u4e3a\u662f\u8bef\u5c01\u9700\u8981\u89e3\u5c01\u7684\u8bf7\u524d\u5f80https://www.ip.cn/ \u67e5\u8be2ip\u4fe1\u606f,\u5e76\u53d1\u9001\u4fe1\u606f\u81f3\u90ae\u4ef6 gpt33@binjie.site \uff0c\u7ad9\u957f\u4f1a\u5b9a\u671f\u770b\u90ae\u4ef6\u5e76\u5904\u7406\u89e3\u5c01\u548c\u5408\u4f5c\u95ee\u9898\uff0c\u5982\u9700\u8c03\u7528\u63a5\u53e3\u8bf7\u89c1\u63a5\u53e3\u6587\u6863https://apifox.com/apidoc/shared-803d9df6-a071-4b3e-9d69-ea1281614d82\uff0c\u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1chatkf123 \u6216\u8005\u524d\u5f80 https://cat.chatavx.com/  \u6ce8\u518c\u4f7f\u7528\uff08\u53ef\u4ed8\u8d39\u4f7f\u7528gpt4 \u6ce8\u518c\u53ef\u514d\u8d39\u4f7f\u75283.5\uff09",
+        "code": "nn=NeuralNetwork([FeedForwardLayer(num_nodes=3, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=1), MaxPooling2DLayer(kernel_size=3), MaxPooling2DLayer(kernel_size=2), MaxPooling2DLayer(kernel_size=5),], layer_spacing = 0.16)",
+        "functions_list": [
+            "FeedForwardLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_nodes": 3,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 1
+            },
+            {
+                "kernel_size": 3
+            },
+            {
+                "kernel_size": 2
+            },
+            {
+                "kernel_size": 5
+            }
+        ]
+    },
+    {
+        "text": "sorry, \u60a8\u7684ip\u5df2\u7531\u4e8e\u89e6\u53d1\u9632\u6ee5\u7528\u68c0\u6d4b\u800c\u88ab\u5c01\u7981,\u672c\u670d\u52a1\u7f51\u5740\u662fhttps://chat18.aichatos8.com \u6216\u8005 https://cat.chatavx.com/ \u5982\u679c\u4f60\u4e0d\u5728\u672c\u7f51\u7ad9\uff0c\u8bf7\u524d\u5f80\u672c\u7f51\u7ad9\u4f7f\u7528\u5373\u53ef \u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1kelemm220 \u6216\u8005\u524d\u5f80 https://binjie09.shop \u81ea\u52a9\u8d2d\u4e70key, \u8ba4\u4e3a\u662f\u8bef\u5c01\u9700\u8981\u89e3\u5c01\u7684\u8bf7\u524d\u5f80https://www.ip.cn/ \u67e5\u8be2ip\u4fe1\u606f,\u5e76\u53d1\u9001\u4fe1\u606f\u81f3\u90ae\u4ef6 gpt33@binjie.site \uff0c\u7ad9\u957f\u4f1a\u5b9a\u671f\u770b\u90ae\u4ef6\u5e76\u5904\u7406\u89e3\u5c01\u548c\u5408\u4f5c\u95ee\u9898\uff0c\u5982\u9700\u8c03\u7528\u63a5\u53e3\u8bf7\u89c1\u63a5\u53e3\u6587\u6863https://apifox.com/apidoc/shared-803d9df6-a071-4b3e-9d69-ea1281614d82\uff0c\u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1chatkf123 \u6216\u8005\u524d\u5f80 https://cat.chatavx.com/  \u6ce8\u518c\u4f7f\u7528\uff08\u53ef\u4ed8\u8d39\u4f7f\u7528gpt4 \u6ce8\u518c\u53ef\u514d\u8d39\u4f7f\u75283.5\uff09",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=5, feature_map_size=7, filter_size=7, filter_spacing=0.48), FeedForwardLayer(num_nodes=7, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=3), MaxPooling2DLayer(kernel_size=3), MaxPooling2DLayer(kernel_size=4),], layer_spacing = 0.34)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 5,
+                "feature_map_size": 7,
+                "filter_size": 7,
+                "filter_spacing": 0.48
+            },
+            {
+                "num_nodes": 7,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 3
+            },
+            {
+                "kernel_size": 3
+            },
+            {
+                "kernel_size": 4
+            }
+        ]
+    },
+    {
+        "text": "sorry, \u60a8\u7684ip\u5df2\u7531\u4e8e\u89e6\u53d1\u9632\u6ee5\u7528\u68c0\u6d4b\u800c\u88ab\u5c01\u7981,\u8bf7\u52ff\u6ee5\u7528\u672c\u7ad9,\u672c\u670d\u52a1\u7f51\u5740\u662fhttps://chat18.aichatos8.com \u6216\u8005 https://cat.chatavx.com/ \u5982\u679c\u4f60\u4e0d\u5728\u672c\u7f51\u7ad9\uff0c\u8bf7\u524d\u5f80\u672c\u7f51\u7ad9\u4f7f\u7528\u5373\u53ef \u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1kelemm220 \u6216\u8005\u524d\u5f80 https://binjie09.shop \u81ea\u52a9\u8d2d\u4e70key, \u8ba4\u4e3a\u662f\u8bef\u5c01\u9700\u8981\u89e3\u5c01\u7684\u8bf7\u524d\u5f80https://www.ip.cn/ \u67e5\u8be2ip\u4fe1\u606f,\u5e76\u53d1\u9001\u4fe1\u606f\u81f3\u90ae\u4ef6 gpt33@binjie.site \uff0c\u7ad9\u957f\u4f1a\u5b9a\u671f\u770b\u90ae\u4ef6\u5e76\u5904\u7406\u89e3\u5c01\u548c\u5408\u4f5c\u95ee\u9898\uff0c\u5982\u9700\u8c03\u7528\u63a5\u53e3\u8bf7\u89c1\u63a5\u53e3\u6587\u6863https://apifox.com/apidoc/shared-803d9df6-a071-4b3e-9d69-ea1281614d82 \u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1chatkf123 \u6216\u8005\u524d\u5f80 https://cat.chatavx.com/  \u6ce8\u518c\u4f7f\u7528\uff08\u53ef\u4ed8\u8d39\u4f7f\u7528gpt4 \u6ce8\u518c\u53ef\u514d\u8d39\u4f7f\u75283.5\uff09",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=1, feature_map_size=3, filter_size=7, filter_spacing=0.22, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=5, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=2), MaxPooling2DLayer(kernel_size=5), MaxPooling2DLayer(kernel_size=2),], layer_spacing = 0.15)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 3,
+                "filter_size": 7,
+                "filter_spacing": 0.22,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 2
+            },
+            {
+                "kernel_size": 5
+            },
+            {
+                "kernel_size": 2
+            }
+        ]
+    },
+    {
+        "text": "sorry, \u60a8\u7684ip\u5df2\u7531\u4e8e\u89e6\u53d1\u9632\u6ee5\u7528\u68c0\u6d4b\u800c\u88ab\u5c01\u7981,\u672c\u670d\u52a1\u7f51\u5740\u662fhttps://chat18.aichatos8.com \u6216\u8005 https://cat.chatavx.com/ \u5982\u679c\u4f60\u4e0d\u5728\u672c\u7f51\u7ad9\uff0c\u8bf7\u524d\u5f80\u672c\u7f51\u7ad9\u4f7f\u7528\u5373\u53ef \u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1kelemm220 \u6216\u8005\u524d\u5f80 https://binjie09.shop \u81ea\u52a9\u8d2d\u4e70key, \u8ba4\u4e3a\u662f\u8bef\u5c01\u9700\u8981\u89e3\u5c01\u7684\u8bf7\u524d\u5f80https://www.ip.cn/ \u67e5\u8be2ip\u4fe1\u606f,\u5e76\u53d1\u9001\u4fe1\u606f\u81f3\u90ae\u4ef6 gpt33@binjie.site \uff0c\u7ad9\u957f\u4f1a\u5b9a\u671f\u770b\u90ae\u4ef6\u5e76\u5904\u7406\u89e3\u5c01\u548c\u5408\u4f5c\u95ee\u9898\uff0c\u5982\u9700\u8c03\u7528\u63a5\u53e3\u8bf7\u89c1\u63a5\u53e3\u6587\u6863https://apifox.com/apidoc/shared-803d9df6-a071-4b3e-9d69-ea1281614d82\uff0c\u5982\u9700\u5408\u4f5c\u63a5\u53e3\u8c03\u7528\u8bf7\u8054\u7cfb\u5fae\u4fe1chatkf123 \u6216\u8005\u524d\u5f80 https://cat.chatavx.com/  \u6ce8\u518c\u4f7f\u7528\uff08\u53ef\u4ed8\u8d39\u4f7f\u7528gpt4 \u6ce8\u518c\u53ef\u514d\u8d39\u4f7f\u75283.5\uff09",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=4, feature_map_size=4, filter_size=5, filter_spacing=0.44, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=5, activation_function=\"Sigmoid\"), FeedForwardLayer(num_nodes=5, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=1), MaxPooling2DLayer(kernel_size=2),], layer_spacing = 0.36)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 4,
+                "feature_map_size": 4,
+                "filter_size": 5,
+                "filter_spacing": 0.44,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_nodes": 5,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 1
+            },
+            {
+                "kernel_size": 2
+            }
+        ]
+    },
+    {
+        "text": "The neural network consists of three convolutional 2D layers with different configurations. The first layer has 2 feature maps, a feature map size of 6, a filter size of 5, and a filter spacing of 0.31. The second layer has 1 feature map, a feature map size of 5, a filter size of 5, a filter spacing of 0.4, and uses the Rectified Linear Unit (ReLU) activation function. The third layer also has 1 feature map, a feature map size of 3, a filter size of 5, a filter spacing of 0.21, and uses the Sigmoid activation function. Additionally, there are two MaxPooling 2D layers with kernel sizes of 5 and 2, respectively. The spacing between layers is 0.3.",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=2, feature_map_size=6, filter_size=5, filter_spacing=0.31), Convolutional2DLayer(num_feature_maps=1, feature_map_size=5, filter_size=5, filter_spacing=0.4, activation_function=\"ReLU\"), Convolutional2DLayer(num_feature_maps=1, feature_map_size=3, filter_size=5, filter_spacing=0.21, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=5), MaxPooling2DLayer(kernel_size=2),], layer_spacing = 0.3)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "Convolutional2DLayer",
+            "MaxPooling2DLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 2,
+                "feature_map_size": 6,
+                "filter_size": 5,
+                "filter_spacing": 0.31
+            },
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 5,
+                "filter_size": 5,
+                "filter_spacing": 0.4,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 3,
+                "filter_size": 5,
+                "filter_spacing": 0.21,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 5
+            },
+            {
+                "kernel_size": 2
+            }
+        ]
+    },
+    {
+        "text": "\u8be5\u795e\u7ecf\u7f51\u7edc\u7531\u4e94\u4e2a\u5c42\u7ec4\u6210\uff1a\u7b2c\u4e00\u5c42\u662f\u4e00\u4e2a\u5377\u79ef\u795e\u7ecf\u7f51\u7edc(CNN)\u5c42\uff0c\u5177\u6709\u4e00\u4e2a\u7279\u5f81\u6620\u5c04\uff0c\u7279\u5f81\u6620\u5c04\u5927\u5c0f\u4e3a5x5\uff0c\u6ee4\u6ce2\u5668\u5927\u5c0f\u4e3a3x3\uff0c\u6ee4\u6ce2\u5668\u95f4\u8ddd\u4e3a0.24\uff0c\u5e76\u4f7f\u7528sigmoid\u6fc0\u6d3b\u51fd\u6570\u3002\u7b2c\u4e8c\u3001\u4e09\u3001\u56db\u5c42\u90fd\u662f\u5168\u8fde\u63a5\u795e\u7ecf\u7f51\u7edc\uff08FeedForwardLayer\uff09\uff0c\u6bcf\u5c42\u5177\u67097\u4e2a\u795e\u7ecf\u5143\uff0c\u7b2c\u4e8c\u3001\u4e09\u5c42\u4f7f\u7528ReLU\u6fc0\u6d3b\u51fd\u6570\uff0c\u7b2c\u56db\u5c42\u4f7f\u7528sigmoid\u6fc0\u6d3b\u51fd\u6570\u3002\u6700\u540e\u4e00\u5c42\u662f\u4e00\u4e2a\u6700\u5927\u6c60\u5316\u5c42\uff08MaxPooling2DLayer\uff09\uff0c\u5177\u67095x5\u7684\u6838\u5927\u5c0f\u3002\u6240\u6709\u5c42\u4e4b\u95f4\u7684\u95f4\u8ddd\u4e3a0.19\u3002",
+        "code": "nn=NeuralNetwork([Convolutional2DLayer(num_feature_maps=1, feature_map_size=5, filter_size=3, filter_spacing=0.24, activation_function=\"Sigmoid\"), FeedForwardLayer(num_nodes=7), FeedForwardLayer(num_nodes=7, activation_function=\"ReLU\"), FeedForwardLayer(num_nodes=7, activation_function=\"Sigmoid\"), MaxPooling2DLayer(kernel_size=5),], layer_spacing = 0.19)",
+        "functions_list": [
+            "Convolutional2DLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "FeedForwardLayer",
+            "MaxPooling2DLayer"
+        ],
+        "args_list": [
+            {
+                "num_feature_maps": 1,
+                "feature_map_size": 5,
+                "filter_size": 3,
+                "filter_spacing": 0.24,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "num_nodes": 7
+            },
+            {
+                "num_nodes": 7,
+                "activation_function": "ReLU"
+            },
+            {
+                "num_nodes": 7,
+                "activation_function": "Sigmoid"
+            },
+            {
+                "kernel_size": 5
+            }
+        ]
+    }
+]

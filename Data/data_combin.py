@@ -11,14 +11,14 @@ class Convolutional2DLayer:
 
     def to_dict(self):
         properties = [
-            f"num_feature_maps={self.num_feature_maps}",
-            f"feature_map_size={self.feature_map_size}",
-            f"filter_size={self.filter_size}",
-            f"filter_spacing={self.filter_spacing}"
+            f'num_feature_maps={self.num_feature_maps}',
+            f'feature_map_size={self.feature_map_size}',
+            f'filter_size={self.filter_size}',
+            f'filter_spacing={self.filter_spacing}'
         ]
         if self.activation_function:  
-            properties.append(f"activation_function={self.activation_function}")
-        code = f"Convolutional2DLayer({', '.join(properties)})"
+            properties.append(f'activation_function="{self.activation_function}"')
+        code = f'Convolutional2DLayer({", ".join(properties)})' 
         return code
     
     def to_args(self):
@@ -34,17 +34,23 @@ class Convolutional2DLayer:
             
 
 class FeedForwardLayer:
-    def __init__(self, num_nodes):
+    def __init__(self, num_nodes, activation_function):
         self.num_nodes = num_nodes
+        self.activation_function = activation_function
 
     def to_dict(self):
-        code = (f"FeedForwardLayer(num_nodes={self.num_nodes})")
+        if self.activation_function is None:
+            code = f'FeedForwardLayer(num_nodes={self.num_nodes})'
+        else:
+            code = f'FeedForwardLayer(num_nodes={self.num_nodes}, activation_function="{self.activation_function}")'
         return code
     
     def to_args(self):
         args_list = {
             "num_nodes": self.num_nodes
         }
+        if self.activation_function:  
+            args_list["activation_function"]=self.activation_function
         return args_list
     
 class MaxPooling2DLayer:
@@ -52,7 +58,7 @@ class MaxPooling2DLayer:
         self.kernel_size = kernel_size
 
     def to_dict(self):
-        code = (f"MaxPooling2DLayer(kernel_size={self.kernel_size})")
+        code = (f'MaxPooling2DLayer(kernel_size={self.kernel_size})')
         return code
     
     def to_args(self):
@@ -73,7 +79,7 @@ class NeuralNetwork:
             layer_code.append(layer.to_dict())
             layer_args.append(layer.to_args())
         
-        code = f"nn=NeuralNetwork({', '.join(layer_code)}, layer_spacing: {self.layer_spacing})"
+        code = f'nn=NeuralNetwork([{", ".join(layer_code)},], layer_spacing = {self.layer_spacing})'
         return code, layer_args
 
 def generate_nn_config(num_layers):
@@ -90,7 +96,8 @@ def generate_nn_config(num_layers):
         
         elif layer_type == FeedForwardLayer:
             num_nodes = random.choice([3, 5, 7])
-            layers.append(FeedForwardLayer(num_nodes))
+            activation_function = random.choice([None,"ReLU","Sigmoid"])
+            layers.append(FeedForwardLayer(num_nodes,activation_function))
 
         elif layer_type == MaxPooling2DLayer:
             kernel_size = random.randint(1,5)
@@ -117,7 +124,7 @@ def generate_dataset(num_configs):
                         "args_list": args_list}) 
     return dataset     
 
-NUM_CONFIGS = 1200  
+NUM_CONFIGS = 10  
 generate_dataset(NUM_CONFIGS)
 
 with open("nn_dataset.json", "w") as json_file:

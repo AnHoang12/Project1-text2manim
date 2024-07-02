@@ -12,7 +12,7 @@ async def process_api_request(request, index):
             await asyncio.sleep(random.randint(10, 20))
             print(f"Started API request of index: {index}.")
             response = await g4f.ChatCompletion.create_async(
-                model="llama2-70b",
+                model="gpt-3.5-turbo",
                 messages=[{"role": "user", "content": request}],
             )
             if len(response) == 0:
@@ -33,7 +33,7 @@ async def run_concurrent_requests(concurrent_requests, manim_data):
 
 if __name__ == "__main__":
 
-    with open('data.json') as f:
+    with open('nn_dataset.json') as f:
         manim_data = json.load(f)
 
     random.shuffle(manim_data)
