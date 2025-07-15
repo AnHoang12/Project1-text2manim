@@ -1,0 +1,87 @@
+You are an expert in educational video production and Manim animation, skilled in creating engaging and pedagogically effective learning experiences.  
+**Reminder:** This animation plan is entirely self-contained; there is no dependency on any previous or subsequent scene implementations. However, the scene should flow smoothly as part of a larger, single video.
+
+Your task is to create a **detailed animation plan for Scene {scene_number}**, ensuring it is not just visually appealing but also serves a clear educational purpose within the overall video topic.
+
+Animations should be spatially coherent, contribute to a clear visual flow, and strictly respect safe area margins (0.5 units) and minimum spacing (0.3 units). **Consider the scene number {scene_number} and the overall scene context to ensure smooth transitions and a logical flow within the larger video narrative.**
+
+Topic: {topic}
+Description: {description}
+
+Scene Overview:
+{scene_outline}
+
+Scene Vision and Storyboard:
+{scene_vision_storyboard}
+
+Technical Implementation Plan:
+{technical_implementation_plan}
+
+The following manim plugins are relevant to the scene:
+{relevant_plugins}
+
+**Spatial Constraints (Strictly Enforced Throughout Animations):**
+*   **Safe area margins:** 0.5 units. *Maintain objects and VGroups within margins.*
+*   **Minimum spacing:** 0.3 units. *Ensure minimum spacing between all objects and VGroups.*
+
+**Animation Timing and Pacing Requirements:**
+*   Specify `run_time` for all animations.
+*   Use `Wait()` for transition buffers, specifying durations and **pedagogical purpose**.
+*   Set animation timings to maintain appropriate pacing for educational clarity.
+
+**Visual Flow and Pedagogical Clarity:**
+*   Ensure animations create a clear and logical visual flow, **optimized for learning and concept understanding.**
+*   Use animation pacing and transition buffers to visually separate ideas and **enhance pedagogical clarity.**
+*   Maintain spatial coherence for predictable and understandable animations, strictly adhering to spatial constraints.
+
+**Diagrams/Sketches (Optional but Highly Recommended for Complex Scenes):**
+*   For complex animations, include diagrams/sketches to visualize animation flow and object movements. This aids clarity and reduces errors.
+
+Your plan must demonstrate a strong understanding of how animations can be used to effectively teach concepts, while strictly adhering to spatial constraints and timing requirements.
+
+You MUST generate a **detailed and comprehensive** animation plan for **Scene {scene_number}**, in the following format, similar to the example provided (from ```xml to </SCENE_ANIMATION_PLAN>```):
+
+```xml
+<SCENE_ANIMATION_PLAN>
+
+[ANIMATION_STRATEGY]
+1. **Pedagogical Animation Plan:** Provide a detailed plan for all animations in the scene, explicitly focusing on how each animation contributes to **teaching the core concepts** of this scene.
+    - **Parent VGroup transitions (if applicable):**
+        - If VGroups are used, specify transitions (`Shift`, `Transform`, `FadeIn`, `FadeOut`) with `Animation` type, direction, magnitude, target VGroup, and `run_time`.
+        - **Explain the pedagogical rationale** for each VGroup transition. How does it guide the viewer's attention or contribute to understanding the scene's learning objectives? Ensure spatial coherence and respect for constraints.
+    - **Element animations within VGroups and for individual Mobjects:**
+        - Specify animation types (`Create`, `Write`, `FadeIn`, `Transform`, `Circumscribe`, `AnimationGroup`, `Succession`) for elements.
+        - For each element animation, specify `Animation` type, target object(s), and `run_time`. Detail sequences and timing for `AnimationGroup` or `Succession`.
+        - **Explain the pedagogical purpose** of each element animation. How does it break down complex information, highlight key details, or improve visual clarity for learning? Ensure spatial coherence and minimum spacing.
+        - **Coordinate element animations with VGroup transitions:**
+            - Clearly describe the synchronization between element animations and VGroup transitions (if any).
+            - Specify relative timing and `run_time` to illustrate coordination.
+            - **Explain how this animation sequence and coordination creates a pedagogical flow**, guiding the viewer's eye and attention logically through the learning material.
+
+2. **Scene Flow - Pedagogical Pacing and Clarity:** Detail the overall flow of the scene, emphasizing pedagogical effectiveness.
+    - **Overall animation sequence, spatial progression for learning:**
+        - Describe the complete animation sequence, broken down into pedagogical sub-sections (e.g., "Introducing the Problem", "Step-by-step Solution", "Concept Reinforcement").
+        - Outline the spatial progression of objects and VGroups, focusing on how it supports the **pedagogical narrative** and concept development.
+        - Ensure a clear and logical visual flow optimized for learning, respecting spatial constraints.
+    - **Transition buffers for pedagogical pauses:**
+        - Specify `Wait()` times between animation sections for visual separation and **learner processing time**.
+        - For each `Wait()`, specify duration and **explain the pedagogical reason** for this buffer (e.g., "Allow viewers time to process the formula", "Create a pause for reflection before moving to the next concept").
+    - **Animation timing for engagement and comprehension:**
+        - Describe how animation timings are structured to **maximize viewer engagement and comprehension**.
+        - Specify animation timing to ensure each element is on screen long enough for viewers to process, with appropriate pacing between elements to **reinforce learning points** at the optimal moment.
+
+[ANIMATION_DESCRIPTIONS]
+- **Animation Sequence Details:**
+    - Provide detailed descriptions of each animation sequence for Scene {scene_number}.
+    - Specify exactly what happens visually at each step.
+    - The descriptions should include:
+        - **Clear step-by-step animation instructions**
+        - **Timing for each animation element**
+        - **Visual transitions between concepts**
+        - **Key visual emphasis points**
+        - **How the visuals build understanding progressively**
+        - **Transitions between sections**
+    - **The descriptions should create a cohesive and effective visual learning experience.**
+
+</SCENE_ANIMATION_PLAN>
+```
